@@ -7,7 +7,7 @@ const Login = (props) => {
       <Content>
         <CTA>
           <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
-          <SignUp>GET ALL THERE</SignUp>
+          <SignUp onClick={()=>{document.getElementById('loginbtn').click()}}>GET ALL THERE</SignUp>
           <Description>
             Get Premier Access for an additional fee with a 
             Disney+ subscription. As of 11/11/22, the price of Disney+

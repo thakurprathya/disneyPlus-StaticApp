@@ -4,9 +4,11 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Detail from "./components/Detail";
 
+const app = {scroolBehavior: "smooth"};
+
 function App() {
   return (
-    <div className="App">
+    <div className={app}>
       <Router>
         <Header />
         <Routes>

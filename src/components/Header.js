@@ -53,7 +53,7 @@ const Header = (props) => {
         <Logo><img src="/images/logo.svg" alt="Disney+" /></Logo>
 
         {!userName ? (
-            <Login onClick={handleAuth}>Login</Login>  /* will run if username not exists */
+            <Login onClick={handleAuth} id="loginbtn">Login</Login>  /* will run if username not exists */
         ) : (
             <> 
                 <NavMenu>
@@ -132,6 +132,7 @@ const NavMenu = styled.div`
   margin-right: auto;
   margin-left: 25px;
   a {
+    cursor: pointer;
     display: flex;
     align-items: center;
     padding: 0 12px;
@@ -181,6 +182,7 @@ const NavMenu = styled.div`
 
 const Login = styled.a`
   background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
   padding: 8px 16px;
   text-transform: uppercase;
   letter-spacing: 1.5px;

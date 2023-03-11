@@ -5,7 +5,7 @@ const Viewers = (props) => {
         <Container>
           <Wrap>
               <img src="/images/viewers-disney.png" alt="" />
-              <video autoPlay={true} loop={true} playsInline={true} muted>
+              <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                   <source src="/videos/1564674844-disney.mp4" type="video/mp4" />
               </video>
           </Wrap>
